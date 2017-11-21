@@ -64,10 +64,9 @@ void multi (int **mat1,int **mat2)
 					result[i][j]+=mat1[i][t]*mat2[t][j];
 				
 				}
-				printf(" %d",result[i][j]);
+			
 				resultofsum+=result[i][j];
 			}
-			printf("\n");
 		}
 
 	}
