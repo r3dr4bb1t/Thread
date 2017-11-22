@@ -85,13 +85,7 @@ int main(int argc, char ** argv)
    for(int i=0; i<thread_num; ++i) {
        pthread_join(threads[i], NULL);
    }
-   for (int x = 0; x < 4000; ++x)
-   {
-   	for (int y = 0; y < 4000; ++y)
-   	{
-   		resultofsum+=C[x];
-   	}
-   }
+
    clock_gettime(CLOCK_MONOTONIC, &end);
 
    double time = (end.tv_sec - begin.tv_sec) + (end.tv_nsec - begin.tv_nsec) / 1000000000.0f;
